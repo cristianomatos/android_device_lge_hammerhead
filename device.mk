@@ -140,6 +140,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
+PRODUCT_COPY_FILES += \
+    device/lge/hammerhead/libdirac/libdirac.so:system/lib/soundfx/libdirac.so
+
 PRODUCT_PACKAGES += \
     libqomx_core \
     libmmcamera_interface \
