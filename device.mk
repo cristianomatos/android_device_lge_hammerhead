@@ -160,6 +160,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
+# libdirac
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/libdirac/libdirac.so:system/lib/soundfx/libdirac.so
+
 PRODUCT_PACKAGES += \
     libqomx_core \
     libmmcamera_interface \
@@ -281,6 +285,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15
+
+# DiracHD audio effects
+PRODUCT_PROPERTY_OVERRIDES += \
+    dsp.dirac.enable=true
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
