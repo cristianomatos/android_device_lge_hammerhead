@@ -1,5 +1,9 @@
 [
  {
+   "repository": "proprietary_vendor_lge",
+   "target_path": "vendor/lge"
+ },
+ {
    "repository": "android_kernel_lge_hammerhead",
    "target_path": "kernel/lge/hammerhead"
  },
